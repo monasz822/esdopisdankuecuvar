@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MONAS - Dopis & Cuvar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Times New Roman', sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  height:60px;
+  background: rgba(255,255,255,0.5);
+  backdrop-filter: blur(6px);
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav h1 {
+  color: orange;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+  url('images/BG.jpg.jpg') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 50px;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: gold;
+  border: none;
+  cursor: pointer;
+}
+
+.about {
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.about h2 {
+  color: orange;
+}
+
+.menu {
+  padding:  0px 40px;
+  background: #fafafa;
+  text-align: center;
+}
+
+.menu h2 {
+  color: orange;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  width: 260px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.desc {
+  font-size: 14px;
+  color: #666;
+}
+
+.price {
+  margin-top: 10px;
+  font-weight: bold;
+  color: orange;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+.social {
+  text-align: center;
+  padding: 40px;
+}
+
+.social h2 {
+  color: orange;
+}
+
+.ig {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.ig a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ig a:hover {
+  color: orange;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>MONAS</h1>
+  <div>
+    <a href="#">Home</a>
+    <a href="#about">Tentang</a>
+    <a href="#menu">Menu</a>
+    <a href="#hubungi">Hubungi</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div>
+    <h2>Segarnya Es Dopis & Lezatnya Cuvar</h2>
+    <p>Produk by Kelompok MONAS (Modal Nekat Anak Sukses)</p>
+    <button onclick="scrollToMenu()">Lihat Menu</button>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>Tentang Kami</h2>
+  <p>
+    MONAS (Modal Nekat Anak Sukses) adalah kelompok kreatif yang menghadirkan jajanan unik dan kekinian.
+    Kami menjual Es Dopis (Doger Pisang) yang segar dan Cuvar (Cucur Varian Rasa) yang lezat.
+    Kami memiliki 3 varian rasa spesial yaitu 
+    1.Matcha toping Oreo 
+    2.Coklat toping Keju 
+    3.Strawberry toping Sprinkle.
+    Produk kami dibuat dengan bahan berkualitas dan rasa yang bikin nagih!
+  </p>
+</section>
+
+<section class="menu" id="menu">
+  <h2>Menu Kami</h2>
+
+  <div class="menu-items">
+
+    <div class="card">
+      <img src="images/dopis.jpg.png">
+      <div class="card-content">
+        <h3>Es Dopis</h3>
+        <p class="desc">Es doger dengan potongan pisang ijo dan jelly serta kelapa yang membuat hidangan makin nikmat dan segar, cocok untuk cuaca yang panas.</p>
+        <p class="price">Rp 10.000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/matcha.jpg.jpeg">
+      <div class="card-content">
+        <h3>Cuvar Matcha</h3>
+        <p class="desc">Cucur kekinian dengan rasa matcha yang unik dan lezat.</p>
+        <p class="price">Rp 3.000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/coklat.jpg.png">
+      <div class="card-content">
+        <h3>Cuvar Coklat</h3>
+        <p class="desc">Manisnya cucur dipadukan dengan lumer coklat. </p>
+        <p class="price">Rp 3.000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/enak.jpg.png">
+      <div class="card-content">
+        <h3>Cuvar Strawberry</h3>
+        <p class="desc">Lembut nya cucur dipadukan dengan glaze strawberry</p>
+        <p class="price">Rp 3.000</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="social" id="ig">
+  <h2>Hubungi kami</h2>
+  <p class="ig">
+  <p>
+     Instagram:
+    <a href="https://instagram.com/monas.cornerr" target="_blank">@monas.cornerr
+    </a>
+  </p>
+    
+  <p>
+     WhatsApp:
+    <a href="https://wa.me/+6281295995623" target="_blank">+62 812-9599-5623
+    </a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 MONAS - Modal Nekat Anak Sukses</p>
+</footer>
+
+<script>
+function scrollToMenu() {
+  document.getElementById("menu").scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>
